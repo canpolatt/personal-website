@@ -1,0 +1,30 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro?styles=17636,17630");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-center {
+  animation: moveInCenter 0.7s ease-out;
+}
+
+.btn{
+    @apply p-3 border-2 border-primary text-primary uppercase hover:text-white hover:bg-primary transition ease-out duration-300;
+}
+
+.text-underline{
+    text-decoration-thickness:1px;
+    text-underline-offset:8px;
+}
+
+@keyframes moveInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
